@@ -1,6 +1,7 @@
 package com.example.parquesdigital.controller;
 
 import com.example.parquesdigital.db.GameRecordDAO;
+import com.example.parquesdigital.db.GameSessionDAO;
 import com.example.parquesdigital.model.Board;
 import com.example.parquesdigital.model.Dice;
 import com.example.parquesdigital.model.Player;
@@ -17,19 +18,25 @@ public class GameController {
     @FXML private Label resultLabel;
     @FXML private Label turnLabel;
 
-    private final Dice dice = new Dice();
-    private final Board board = new Board();
-    private final List<Player> players = new ArrayList<>();
+    private Dice dice = new Dice();
+    private Board board = new Board();
+    private List<Player> players = new ArrayList<>();
     private int currentTurn = 0;
     private int moveCounter = 0;
 
-    private final GameRecordDAO dao = new GameRecordDAO();
+    private GameRecordDAO recordDAO = new GameRecordDAO();
+    private GameSessionDAO sessionDAO = new GameSessionDAO();
+    private int sessionId; // <-- ID de la sesión actual
 
     @FXML
     public void initialize() {
-        players.add(new Player("Jugador 1"));
-        players.add(new Player("Jugador 2"));
-        turnLabel.setText("Turno de: " + players.get(currentTurn).getName());
+        // Crear sesión en BD
+        sessionId = sessionDAO.createSession();
+
+        players.add(new Player("jugador 1"));
+        players.add(new Player("jugador 2"));
+
+        turnLabel.setText("turno de: " + players.get(currentTurn).getName());
         rollButton.setOnAction(e -> rollDice());
     }
 
@@ -43,9 +50,9 @@ public class GameController {
         int to = board.move(current, value);
 
         moveCounter++;
-        dao.saveMove(1, current.getName(), moveCounter, from, to, value);
+        recordDAO.saveMove(sessionId, current.getName(), moveCounter, from, to, value);
 
         currentTurn = (currentTurn + 1) % players.size();
-        turnLabel.setText("Turno de: " + players.get(currentTurn).getName());
+        turnLabel.setText("turno de: " + players.get(currentTurn).getName());
     }
 }
