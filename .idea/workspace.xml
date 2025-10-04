@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ec9ebfc-c212-45e3-a014-9c095dff00b1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/db/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/parquesdigital/game.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/parquesdigital/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/parquesdigital/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +66,26 @@
       <recent name="C:\Users\USUARIO\IdeaProjects\parques-digital" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.parquesdigital.MainApp" />
+      <module name="parques-digital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.parquesdigital.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759592964956</updated>
-      <workItem from="1759592965961" duration="4526000" />
+      <workItem from="1759592965961" duration="5304000" />
     </task>
     <servers />
   </component>

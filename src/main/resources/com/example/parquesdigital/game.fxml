@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.parquesdigital.GameController">
+
+    <!-- Encabezado -->
+    <top>
+        <HBox spacing="10" alignment="CENTER" styleClass="header">
+            <Label text="🎲 Parques Digital" styleClass="title"/>
+        </HBox>
+    </top>
+
+    <!-- Centro: Tablero -->
+    <center>
+        <GridPane fx:id="boardGrid" hgap="5" vgap="5" alignment="CENTER">
+            <!-- El tablero se llenará dinámicamente en el controlador -->
+        </GridPane>
+    </center>
+
+    <!-- Panel lateral -->
+    <right>
+        <VBox spacing="15" padding="15" styleClass="sidebar">
+            <Label text="Jugadores" styleClass="subtitle"/>
+            <ListView fx:id="playersList" prefHeight="200"/>
+
+            <Button fx:id="rollDiceBtn" text="🎲 Tirar Dado"/>
+            <Label fx:id="diceResultLbl" text="Resultado: -" styleClass="dice-result"/>
+
+            <Button fx:id="exitBtn" text="Salir"/>
+        </VBox>
+    </right>
+
+    <!-- Pie -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" padding="10" styleClass="footer">
+            <Label text="© 2025 Parques Digital" styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+</BorderPane>
