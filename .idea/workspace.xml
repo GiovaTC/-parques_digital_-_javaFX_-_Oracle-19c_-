@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ec9ebfc-c212-45e3-a014-9c095dff00b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/controller/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/db/GameRecordDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/model/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/model/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/model/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/db/DBManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/db/GameRecordDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/db/GameRecordDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/model/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/model/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759592964956</updated>
-      <workItem from="1759592965961" duration="2542000" />
+      <workItem from="1759592965961" duration="4361000" />
     </task>
     <servers />
   </component>

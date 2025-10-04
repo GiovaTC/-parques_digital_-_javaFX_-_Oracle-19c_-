@@ -30,5 +30,22 @@ public class GameController {
         players.add(new Player("jugador 1"));
         players.add(new Player("jugador 2"));
         turnLabel.setText("turno de : "+ players.get(currentTurn).getName());
+        rollButton.setOnAction(e -> rollDice());
+    }
+
+    private void rollDice() {
+        int value  = dice.roll();
+        Player current = players.get(currentTurn);
+
+        resultLabel.setText(current.getName() + " saco: " + value);
+
+        int from = current.getPosition();
+        int to = board.move(current, value);
+
+        moveCounter++;
+        dao.saveMove(1, current.getName(), moveCounter, from, to, value);
+
+        currentTurn = (currentTurn + 1) % players.size();
+        turnLabel.setText("turno de: " + players.get(currentTurn).getName());
     }
 }
