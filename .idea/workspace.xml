@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ec9ebfc-c212-45e3-a014-9c095dff00b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/parquesdigital/game.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/parquesdigital/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/parquesdigital/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/parquesdigital/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/game.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/USUARIO/IdeaProjects/parques-digital",
+    "last_opened_file_path": "C:/Users/USUARIO/IdeaProjects/parques-digital/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,7 +59,11 @@
       <recent name="com.example.parquesdigital.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\IdeaProjects\parques-digital\src\main\resources" />
       <recent name="C:\Users\USUARIO\IdeaProjects\parques-digital" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\IdeaProjects\parques-digital\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -94,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759592964956</updated>
-      <workItem from="1759592965961" duration="5304000" />
+      <workItem from="1759592965961" duration="5643000" />
     </task>
     <servers />
   </component>
