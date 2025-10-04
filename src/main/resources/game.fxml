@@ -22,7 +22,7 @@
 
     <!-- Panel lateral -->
     <right>
-        <VBox spacing="15" padding="15" styleClass="sidebar">
+        <VBox spacing="15" padding="15 15 15 15" styleClass="sidebar">
             <Label text="Jugadores" styleClass="subtitle"/>
             <ListView fx:id="playersList" prefHeight="200"/>
 
@@ -35,7 +35,7 @@
 
     <!-- Pie -->
     <bottom>
-        <HBox spacing="10" alignment="CENTER" padding="10" styleClass="footer">
+        <HBox spacing="10" alignment="CENTER" padding="10 10 10 10" styleClass="footer">
             <Label text="© 2025 Parques Digital" styleClass="footer-text"/>
         </HBox>
     </bottom>
