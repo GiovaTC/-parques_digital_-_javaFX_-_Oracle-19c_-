@@ -1,42 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.geometry.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.parquesdigital.controller.GameController">
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.parquesdigital.controller.GameController"
+            prefWidth="800" prefHeight="600">
 
-    <!-- Encabezado -->
-    <top>
-        <HBox spacing="10" alignment="CENTER" styleClass="header">
-            <Label text="🎲 Parques Digital" styleClass="title"/>
-        </HBox>
-    </top>
+    <!-- Label para mostrar el turno -->
+    <Label fx:id="turnLabel"
+           layoutX="50" layoutY="30"
+           text="Turno: " />
 
-    <!-- Centro: Tablero -->
-    <center>
-        <GridPane fx:id="boardGrid" hgap="5" vgap="5" alignment="CENTER">
-            <!-- El tablero se llenará dinámicamente en el controlador -->
-        </GridPane>
-    </center>
+    <!-- Label para mostrar el resultado del dado -->
+    <Label fx:id="resultLabel"
+           layoutX="50" layoutY="70"
+           text="Resultado: " />
 
-    <!-- Panel lateral -->
-    <right>
-        <VBox spacing="15" padding="15 15 15 15" styleClass="sidebar">
-            <Label text="Jugadores" styleClass="subtitle"/>
-            <ListView fx:id="playersList" prefHeight="200"/>
+    <!-- Botón para tirar el dado -->
+    <Button fx:id="rollButton"
+            layoutX="50" layoutY="120"
+            text="🎲 Tirar Dado" />
 
-            <Button fx:id="rollDiceBtn" text="🎲 Tirar Dado"/>
-            <Label fx:id="diceResultLbl" text="Resultado: -" styleClass="dice-result"/>
-
-            <Button fx:id="exitBtn" text="Salir"/>
-        </VBox>
-    </right>
-
-    <!-- Pie -->
-    <bottom>
-        <HBox spacing="10" alignment="CENTER" padding="10 10 10 10" styleClass="footer">
-            <Label text="© 2025 Parques Digital" styleClass="footer-text"/>
-        </HBox>
-    </bottom>
-</BorderPane>
+</AnchorPane>

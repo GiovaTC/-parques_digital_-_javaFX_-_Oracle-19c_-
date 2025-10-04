@@ -17,19 +17,19 @@ public class GameController {
     @FXML private Label resultLabel;
     @FXML private Label turnLabel;
 
-    private Dice dice = new Dice();
-    private Board board = new Board();
-    private List<Player> players = new ArrayList<>();
+    private final Dice dice = new Dice();
+    private final Board board = new Board();
+    private final List<Player> players = new ArrayList<>();
     private int currentTurn = 0;
     private int moveCounter = 0;
 
-    private GameRecordDAO dao = new GameRecordDAO();
+    private final GameRecordDAO dao = new GameRecordDAO();
 
     @FXML
     public void initialize() {
-        players.add(new Player("jugador 1"));
-        players.add(new Player("jugador 2"));
-        turnLabel.setText("turno de : "+ players.get(currentTurn).getName());
+        players.add(new Player("Jugador 1"));
+        players.add(new Player("Jugador 2"));
+        turnLabel.setText("Turno de: " + players.get(currentTurn).getName());
         rollButton.setOnAction(e -> rollDice());
     }
 
@@ -37,7 +37,7 @@ public class GameController {
         int value  = dice.roll();
         Player current = players.get(currentTurn);
 
-        resultLabel.setText(current.getName() + " saco: " + value);
+        resultLabel.setText(current.getName() + " sacó: " + value);
 
         int from = current.getPosition();
         int to = board.move(current, value);
@@ -46,6 +46,6 @@ public class GameController {
         dao.saveMove(1, current.getName(), moveCounter, from, to, value);
 
         currentTurn = (currentTurn + 1) % players.size();
-        turnLabel.setText("turno de: " + players.get(currentTurn).getName());
+        turnLabel.setText("Turno de: " + players.get(currentTurn).getName());
     }
 }
